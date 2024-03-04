@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../store/reducers';
 import { addRecord, setFilter } from '../../store/actions';
 import TodoItem from '../TodoItem/TodoItem';
+import { Wrapper, InputForm, Input, Button } from './TodolistStyles'; // Import styled components
 
 const TodoList: React.FC = () => {
   const [inputValue, setInputValue] = useState('');
@@ -34,12 +35,12 @@ const TodoList: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>To-Do List</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={inputValue} onChange={handleChange} />
-        <button type="submit">Add Todo</button>
-      </form>
+    <Wrapper>
+      <h1>Procrastinator List</h1>
+      <InputForm onSubmit={handleSubmit}>
+        <Input type="text" value={inputValue} onChange={handleChange} />
+        <Button type="submit">Add Todo</Button>
+      </InputForm>
       <ul>
         {filteredRecords().map(record => (
           <TodoItem
@@ -51,9 +52,9 @@ const TodoList: React.FC = () => {
         ))}
       </ul>
       <div>
-        <button onClick={() => dispatch(setFilter('all'))}>All</button>
-        <button onClick={() => dispatch(setFilter('completed'))}>Completed</button>
-        <button onClick={() => dispatch(setFilter('current'))}>Current</button>
+        <Button onClick={() => dispatch(setFilter('all'))}>All</Button>
+        <Button onClick={() => dispatch(setFilter('completed'))}>Completed</Button>
+        <Button onClick={() => dispatch(setFilter('current'))}>Current</Button>
       </div>
       <div>
         Completed: {records.filter(record => record.completed).length}
@@ -61,7 +62,8 @@ const TodoList: React.FC = () => {
       <div>
         Uncompleted: {records.filter(record => !record.completed).length}
       </div>
-    </div>
+      <div className='bgHolder'></div>
+    </Wrapper>
   );
 };
 

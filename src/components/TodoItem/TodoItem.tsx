@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleRecord } from '../../store/actions';
+import { ListItem } from './TodoItemStyles'; // Import styled component
 
 interface TodoItemProps {
   id: number;
@@ -16,9 +17,9 @@ const TodoItem: React.FC<TodoItemProps> = ({ id, text, completed }) => {
   };
 
   return (
-    <li onClick={handleToggle} style={{ textDecoration: completed ? 'line-through' : 'none' }}>
+    <ListItem onClick={handleToggle} completed={completed}>
       {text}
-    </li>
+    </ListItem>
   );
 };
 
