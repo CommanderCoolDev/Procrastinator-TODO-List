@@ -1,4 +1,4 @@
-import TodoList from './components/TodoList/Todolist';
+import TodoList from './components/TodoList/Todolist'
 import './App.css'
 
 
@@ -7,7 +7,7 @@ function App() {
     <div className ='App'>
       <TodoList />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
