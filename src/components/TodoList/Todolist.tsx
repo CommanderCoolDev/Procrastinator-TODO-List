@@ -62,7 +62,7 @@ const TodoList: React.FC = () => {
       <div>
         Uncompleted: {records.filter(record => !record.completed).length}
       </div>
-      <div className='bgHolder'></div>
+     
     </Wrapper>
   );
 };

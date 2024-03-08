@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  background: url('./images/bggif.gif');
+  background-size: cover; 
   height:100%;
 }
 html {
@@ -19,10 +20,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.bgHolder{
-   background: url('./images/bggif.gif');
-   background-size: cover; 
-    background-position: center; 
-    width:75vh;
-    height:75vh;
-}
+
