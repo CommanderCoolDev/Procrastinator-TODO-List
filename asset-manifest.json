@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.92d6fc18.css",
-    "main.js": "/static/js/main.837e3fa5.js",
-    "static/media/bggif.gif": "/static/media/bggif.b322acd30385598b2e36.gif",
-    "index.html": "/index.html",
-    "main.92d6fc18.css.map": "/static/css/main.92d6fc18.css.map",
-    "main.837e3fa5.js.map": "/static/js/main.837e3fa5.js.map"
+    "main.css": "/procrastinator-todo-list/static/css/main.15198ea2.css",
+    "main.js": "/procrastinator-todo-list/static/js/main.27f4457f.js",
+    "static/media/bggif.gif": "/procrastinator-todo-list/static/media/bggif.b322acd30385598b2e36.gif",
+    "index.html": "/procrastinator-todo-list/index.html",
+    "main.15198ea2.css.map": "/procrastinator-todo-list/static/css/main.15198ea2.css.map",
+    "main.27f4457f.js.map": "/procrastinator-todo-list/static/js/main.27f4457f.js.map"
   },
   "entrypoints": [
-    "static/css/main.92d6fc18.css",
-    "static/js/main.837e3fa5.js"
+    "static/css/main.15198ea2.css",
+    "static/js/main.27f4457f.js"
   ]
 }
